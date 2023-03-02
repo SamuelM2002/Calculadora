@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="main">
+        <form name="calculator">
+            <input type="text" class="text maincolor" name="text1" disabled><br>
+            <input type="button" class="num maincolor" name="num1" value=1 onclick="displayNum(num1.value)">
+            <input type="button" class="num maincolor" name="num2" value=2 onclick="displayNum(num2.value)">
+            <input type="button" class="num maincolor" name="num3" value=3 onclick="displayNum(num3.value)">
+            <input type="button" class="num green" name="mulnum" value=* onclick="displayNum(mulnum.value)"><br>
+            
+            <input type="button" class="num maincolor" name="num4" value=4 onclick="displayNum(num4.value)">
+            <input type="button" class="num maincolor" name="num5" value=5 onclick="displayNum(num5.value)">
+            <input type="button" class="num maincolor" name="num6" value=6 onclick="displayNum(num6.value)">
+            <input type="button" class="num red" name="subnum" value=- onclick="displayNum(subnum.value)"><br>
+
+            <input type="button" class="num maincolor" name="num7" value=7 onclick="displayNum(num7.value)">
+            <input type="button" class="num maincolor" name="num8" value=8 onclick="displayNum(num8.value)">
+            <input type="button" class="num maincolor" name="num9" value=9 onclick="displayNum(num9.value)">
+            <input type="button" class="num blue" name="addnum" value=+ onclick="displayNum(addnum.value)"><br>
+
+            <input type="reset" class="reset maincolor" name="reset" value=C>
+            <input type="button" class="num maincolor" name="num0" value=0 onclick="displayNum(num0.value)">
+            <input type="button" class="num maincolor" name="divinum" value=/ onclick="displayNum(divinum.value)">
+            <input type="button" class="num yellow" name="equal" value== onclick="text1.value=eval((text1.value).replace(/\b0(\d+)\b/g, '$1'))"><br>
+        </form>
+    </div>
+</script>
+</body>
+<script src="script.js"></script>
+</html>
